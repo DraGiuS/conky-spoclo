@@ -69,7 +69,7 @@ ${if_running spotify}\
         ${goto 70}${voffset 0}${font GE Inspira Bold:size=18}${exec ~/.conky/spoclo/scripts/artist.sh}${font}${voffset -0}
         ${goto 70}${voffset -12}${font GE Inspira:size=16}${exec ~/.conky/spoclo/scripts/title.sh}${font}${voffset 12}\
 ${endif}\
-${voffset 130}${font GE Inspira:size=14}${alignr}${color3}Linux  ${kernel}${color}
+${voffset 130}${font GE Inspira:size=12}${alignr}${color3}Linux  ${kernel}${color}
 ${voffset 20}cpu1 ${alignr}${cpu cpu1}%
 cpu2 ${alignr}${cpu cpu2}%
 ram ${alignr}${mem} / ${memmax}
