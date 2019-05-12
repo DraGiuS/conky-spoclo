@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------
 -- CONKY THEME: Spoclo
--- Author: Yosh
+-- Author: Dacha204
 -- Variant: Right Edge, Spotify Indicator Below Time
 -- Github: 
 -- Based on:
@@ -60,16 +60,16 @@ conky.config = {
 };
 
 conky.text = [[
-${alignr}${voffset 0}${font GE Inspira:size=22}${time %A}${font}${voffset 0}
-${alignr}${voffset 5}${font GE Inspira:size=22}${time %B} ${time %e}${font}${voffset -5}
+${alignr}${voffset 0}${font Raleway:size=22}${time %A}${font}${voffset 0}
+${alignr}${voffset 5}${font Raleway:size=26}${time %B} ${time %e}${font}${voffset -5}
 ${alignr}${voffset -20}${font Noto Sans:size=100}${time %H:%M %p}${font}${voffset 20}
 ${if_running spotify}\
         ${voffset -227}
         ${image ~/.conky/spoclo/spotify_icon.png -p 0,22 -s 65x65}\
-        ${goto 70}${voffset 0}${font GE Inspira Bold:size=18}${exec ~/.conky/spoclo/scripts/artist.sh}${font}${voffset -0}
-        ${goto 70}${voffset -12}${font GE Inspira:size=16}${exec ~/.conky/spoclo/scripts/title.sh}${font}${voffset 12}\
+        ${goto 70}${voffset 0}${font Raleway:size=18}${exec ~/.conky/spoclo/scripts/artist.sh}${font}${voffset -0}
+        ${goto 70}${voffset -12}${font Raleway:size=16}${exec ~/.conky/spoclo/scripts/title.sh}${font}${voffset 12}\
 ${endif}\
-${voffset 130}${font GE Inspira:size=12}${alignr}${color3}Linux  ${kernel}${color}
+${voffset 130}${font Raleway:pixelsize=17}${alignr}${color3}Linux  ${kernel}${color}
 ${voffset 20}cpu1 ${alignr}${cpu cpu1}%
 cpu2 ${alignr}${cpu cpu2}%
 ram ${alignr}${mem} / ${memmax}
